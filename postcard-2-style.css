@@ -1,0 +1,157 @@
+body{
+	background-color: #1A5B35;
+	margin: 0;
+	position: relative;
+}
+
+.container{ 
+/*	position: relative;*/
+	max-width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: wrap;
+}
+
+.content{
+	max-width: 660px ;
+
+}
+
+h1{
+	font-family: 'Bad Script', cursive;
+	font-style: cursive;
+	font-size: 72px;
+	line-height: 115px;
+	background: linear-gradient(180deg, #CEB076 0%, #D6BD84 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+p{
+	font-family: 'roboto';
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	color: #FFFFFF;
+}
+
+.left-top{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.left-bottom{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.left-bottom2{
+	position: absolute;
+	left: 30px;
+	bottom: 100px;
+}
+
+.center{
+	position: absolute;
+	top: 587px;
+	left: 820px;
+}
+
+.right-top{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.hidden-objects{
+	visibility: hidden;
+}
+
+
+@media screen and (max-width: 576px) {
+	.container{
+		height: 	auto;
+	}
+	
+	h1{
+		font-size: 43px;
+		line-height: 72px;
+		padding-top: 135px;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 19px;
+	}
+	
+	.left-top {
+		position: absolute;
+		height: 180px;
+		width: 120px;
+		left: 0px;
+		top: 4px;
+		border-radius: 0px;
+	}
+
+	.right-top {
+		visibility: hidden;
+	}
+
+	.left-bottom2 {
+		position: absolute;
+		height: 56px;
+		width: 56px;
+		left: 80%;
+    	bottom: 75%;
+		border-radius: 0px;
+	}
+
+	.left-bottom {
+		visibility: hidden;
+	}
+
+	.center{
+		position: absolute;
+		top: 558px;
+		left: 267px;
+	}
+
+	.hidden-objects{
+		visibility: visible;
+	}
+
+	.time{
+		position: absolute;
+		top: -15px;
+		left: 10px;
+		font-family: 'Roboto';
+		font-size: 19px
+	}
+
+	.panel{
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+
+	.turn-on {
+		position: absolute;
+		top: 50px;
+		right: 10px;
+		font-family: 'Roboto';
+		font-size: 18px;
+		line-height: 16px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+}
+
+
